@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Saída</title>
+    <script src="registro.js" defer></script>
+</head>
+<body>
+    <h1>Ponto Web - Registro Saída</h1>
+    <form id="registro-saida-form" onsubmit="registrarSaida(event)">
+        <label for="usuario-saida">Usuário:</label>
+        <input type="datetime-local" id="usuario-saida" name="usuario-saida" required>
+        <button type="submit">Registrar Saída</button>
+    </form>
+
+    <!-- Botão que aparece após o registro da saída -->
+    <div id="botao-sair" style="display: none;">
+        <button onclick="voltarParaLogin()">Sair</button>
+    </div>
+</body>
+</html>
